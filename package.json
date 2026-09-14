@@ -1,0 +1,15 @@
+{
+  "name": "delivery-checklist",
+  "version": "0.2.0",
+  "description": "Pre-send verification for deliverables: opens the real file to verify row and dedup counts, scans for placeholder residue, diffs incremental files against their stated baseline, and logs the batch in a ledger with candidate vs sendable counts kept separate.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenneyZhuang/delivery-checklist.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
