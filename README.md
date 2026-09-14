@@ -4,6 +4,12 @@ Verify a deliverable before it ships — by opening the actual file, not by trus
 
 交付物发出之前做核对——打开真实文件验证，而不是相信生成它的脚本。
 
+## Why / 为什么
+
+A deliverable carries your credibility: one wrong number in a client-facing file costs more trust than ten correct ones earn back. Most shipped errors come from trusting the script that built the file instead of opening the file itself. The checks here take minutes; the mistakes they catch take days.
+
+交付物承载你的信用：发给客户的一个错数字，比十个对的赚回来的还多。大多数发出的事故，源于"相信生成文件的脚本"而不是"打开文件本身"。这里的检查只要几分钟，它们抓住的错误要花几天。
+
 ## The checks / 五道检查
 
 1. **Shape** — only the columns the recipient acts on; headers in the recipient's language.
