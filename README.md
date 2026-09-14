@@ -37,6 +37,13 @@ Without the diff, "all new" ships as a claim. Without the dedup, 54 defects ship
 
 不做 diff，"全部新增"就只是一句声明；不去重，54 行缺陷就直接发出去了。这两件事，核对清单几分钟就能抓住。
 
+## Honest limitations / 如实说明局限
+
+- The dedup key (name+location for entity lists) is a heuristic; two genuinely different entities sharing a name+location will merge — spot-check merges before shipping.
+- Ledger reconciliation assumes the ledger exists and is maintained; a broken ledger needs rebuilding first.
+
+去重键（实体清单的 name+location）是启发式：同名同地的两家真不同实体会被合并——发出前抽查合并项。台账对账假设台账存在且被维护；坏的台账要先重建。
+
 ## Install / 安装
 
 ```bash
