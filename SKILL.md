@@ -17,6 +17,10 @@ metadata:
 
 # Delivery Checklist: verify before you send
 
+## When to use
+
+Use at packaging time for any deliverable leaving the team: reports to a boss, files to clients, releases to production. Not for continuous integration pipelines (use CI gates) or for code review (use a review checklist).
+
 Run this checklist before any deliverable leaves your hands. A deliverable
 carries your credibility: one wrong number in a client-facing file costs more
 trust than ten correct ones earn back. The checks below take minutes; the
@@ -94,3 +98,10 @@ the accompanying report match the opened file, the file contains zero
 duplicate rows on the identifying basis, the ledger records the batch, and
 the file sits in the agreed directory having been opened once more as the
 recipient will open it.
+
+## Gotchas / 常见坑
+
+- Use read-do, not read-confirm: for a delivery gate each item is executed item-by-item at packaging time, or the checklist degrades into a signed-but-skipped ritual.
+- Every 'checked' needs evidence captured at check time (cell value, file hash, screenshot) — a check from memory is the most common failure.
+- Verify the artifact actually opens (xlsx loads, csv parses, PDF renders) before it leaves, not after.
+- A checklist run the day before delivery catches nothing; run it at packaging time on the exact artifact being sent.

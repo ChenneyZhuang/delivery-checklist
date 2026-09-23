@@ -1,0 +1,23 @@
+{
+  "skill_name": "delivery-checklist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我在 /Volumes/work/outbound/Client_List_2026.xlsx 打包好了，发出去之前帮我按清单过一遍",
+      "expected_output": "A completed checklist with per-item evidence (sheet opens, row counts, no placeholder strings, date-stamped filename) and a clear ship/no-ship verdict; any failed item blocks with the exact failing evidence.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "check the delivery package in ~/outbound/ before it goes to the client tomorrow",
+      "expected_output": "Read-do execution on the actual artifact: file opens, naming, no internal notes leaked, evidence recorded per item, verdict at the end.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我把要发出去的月报文件核对一下",
+      "expected_output": "A run of the checklist on the specified file with recorded evidence per item and a final ship/no-ship line; no item marked done without its evidence pointer.",
+      "files": []
+    }
+  ]
+}
